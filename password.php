@@ -34,7 +34,7 @@
                 <button type="submit" class="btn btn-primary form-control my-2" style="border-radius:30px;">Sign In</button>
                 <hr>
                 <h6 class="" style="color:red;"> 
-                <a href="#######.php">Forgot Password?</a> 
+                <a href="#####.php">Forgot Password?</a> 
                 </h6>
             </div>
     </div>

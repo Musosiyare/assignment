@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="password.php" method="post">
+    <form action="####.php" method="post">
     <header class="text-white p-1 text-center" style="background-color:tomato;">
 <h5>Assignment</h5>
 </header>

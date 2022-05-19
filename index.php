@@ -52,7 +52,7 @@
                 <button type="submit" class="btn btn-danger form-control my-2">
                 <i class="fa fa-google-plus-square" aria-hidden="true"></i>
                 Continue with Google</button>
-                <h6 class="" style="color:red;">Already have an account, 
+                <h6 class="" style="color:red;">Already have an Account, 
                 <a href="username.php">Sign In</a> 
                 </h6>
             </div>
