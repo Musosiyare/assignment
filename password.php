@@ -21,14 +21,16 @@
 <!-- form container -->
 <div class="d-flex justify-content-center align-items-center" style="height:80vh;">
     <!-- <h1>Test</h1> -->
-    <div class="border px-4 pt-4 position-relative text-center w-45">
+    <div class="border px-4 pt-4 position-relative text-center w-25">
     <i class="fa fa-user-circle text-info" aria-hidden="true" style="font-size:50px;position:absolute;top:-30px"></i>
         <h6>Welcome Back</h6>
             <div class="second my-2">
+            <i class="fa fa-user-circle text-info" aria-hidden="true"></i>
                 Hi Musocial
-                <input type="hidden" name="" value="" class="form-control my-2">
-                <input type="password" name="password" id="" placeholder="Choose Password" class="form-control my-2">
-                <i class="fa fa-key text-info" aria-hidden="true"></i>
+                <div class="position-relative">
+                <input type="password" name="password" id="" placeholder="Password" class="px-4 form-control my-2">
+                <i class="fa fa-key text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
+            </div>
                 <button type="submit" class="btn btn-primary form-control my-2" style="border-radius:30px;">Sign In</button>
                 <hr>
                 <h6 class="" style="color:red;"> 

@@ -24,20 +24,34 @@
     <div class="border px-4 pt-4 position-relative text-center w-25">
     <i class="fa fa-user-circle text-info" aria-hidden="true" style="font-size:50px;position:absolute;top:-30px"></i>
         <h6>I can't wait to create an account</h6>
-        <div class="first my-2 d-flex justify-content-center m-1">
-            <input type="text" name="fname" id="" placeholder="Firstname" class="form-control">
-            <i class="fa fa-user text-info" aria-hidden="true"></i>
-            <input type="text" name="lname" id="" placeholder="Lastname" class="form-control">  
-            <i class="fa fa-user text-info" aria-hidden="true"></i>
+        <div class="my-2 position-relative m-1">
+           <div class="row">
+               <div class="col  position-relative">
+               <input type="text" name="fname" id="" placeholder="Firstname" class="form-control">
+                <i class="fa fa-user text-info " aria-hidden="true"  style="position:absolute; top:10px;left:13px;"></i>
+           
+               </div>
+               <div class="col  position-relative">
+               <input type="text" name="lname" id="" placeholder="Lastname" class="form-control">  
+                <i class="fa fa-user text-info" aria-hidden="true" style="position:absolute; top:10px;left:13px;"></i>
+               </div>
+           </div>
+        </div>
+            <div class="my-2">
+                <div class="position-relative">
+                    <input type="email" name="email" id="" placeholder="Email" class="px-4 form-control my-2">
+                    <i class="fa fa-envelope text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
+                </div>
+                <div class="position-relative">
+                <input type="password" name="password" id="" placeholder="Password" class="px-4 form-control my-2">
+                <i class="fa fa-key text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
             </div>
-            <div class="second my-2">
-                <input type="email" name="email" id="" placeholder="Email" class="form-control my-2">
-                <i class="fa fa-envelope text-info" aria-hidden="true"></i>
-                <input type="password" name="password" id="" placeholder="Choose Password" class="form-control my-2">
-                <i class="fa fa-key text-info" aria-hidden="true"></i>
+                
                 <button type="submit" class="btn btn-primary form-control my-2" style="border-radius:30px;">Next</button>
                 <hr>
-                <button type="submit" class="btn btn-danger form-control my-2">Continue with Google</button>
+                <button type="submit" class="btn btn-danger form-control my-2">
+                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                Continue with Google</button>
                 <h6 class="" style="color:red;">Already have an account, 
                 <a href="username.php">Sign In</a> 
                 </h6>
