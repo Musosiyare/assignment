@@ -27,23 +27,23 @@
         <div class="my-2 position-relative m-1">
            <div class="row">
                <div class="col  position-relative">
-               <input type="text" name="fname" id="" placeholder="Firstname" class="form-control">
+               <input type="text" name="fname" id="" placeholder="Firstname" required class="form-control">
                 <i class="fa fa-user text-info " aria-hidden="true"  style="position:absolute; top:10px;left:13px;"></i>
            
                </div>
                <div class="col  position-relative">
-               <input type="text" name="lname" id="" placeholder="Lastname" class="form-control">  
+               <input type="text" name="lname" id="" placeholder="Lastname" required class="form-control">  
                 <i class="fa fa-user text-info" aria-hidden="true" style="position:absolute; top:10px;left:13px;"></i>
                </div>
            </div>
         </div>
             <div class="my-2">
                 <div class="position-relative">
-                    <input type="email" name="email" id="" placeholder="Email" class="px-4 form-control my-2">
+                    <input type="email" name="email" id="" placeholder="Email" required class="px-4 form-control my-2">
                     <i class="fa fa-envelope text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
                 </div>
                 <div class="position-relative">
-                <input type="password" name="password" id="" placeholder="Password" class="px-4 form-control my-2">
+                <input type="password" name="password" id="" placeholder="Password" required class="px-4 form-control my-2">
                 <i class="fa fa-key text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
             </div>
                 
