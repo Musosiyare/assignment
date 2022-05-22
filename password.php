@@ -33,7 +33,7 @@ $email = $_SESSION['user']['email'];
         <h6>Welcome Back</h6>
             <div class="second my-2">
             <i class="fa fa-user-circle text-info" aria-hidden="true"></i>
-                <?php print $email; ?>
+                <?php print ucfirst($email);?>
 
                 <?php 
                         if(isset($_SESSION['error'])){
@@ -59,7 +59,7 @@ $email = $_SESSION['user']['email'];
             </div>
     </div>
 </div>
-<div class="d-flex justify-content-between bg-primary py-3 text-white">
+<div class="d-flex justify-content-between bg-primary py-3 text-white p-5">
 <h6>Developed by Musocial</h6>
 <h6>Kigali Rwanda</h6>
 <h6>

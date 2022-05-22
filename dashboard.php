@@ -4,6 +4,7 @@ session_start();
 if(!isset($_SESSION['user'])){
     header('location:username.php');
 }
+$fname = $_SESSION['user']['fname'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,30 +22,38 @@ if(!isset($_SESSION['user'])){
     <title>Document</title>
 </head>
 <body>
- <header class="text-white p-1 text-center my-2" style="background-color:tomato;">
-        <h5>Assignment</h5>
-    </header>
-    <div class="logout"style="margin-left:90%; margin-top:-35px; color:white;">
-    <form class="d-flex">
-    <i class="fa fa-sign-out" aria-hidden="true"></i>
-    <a href="logout.php" class=" btn-sm">
-    Logout
+    <div class="d-flex justify-content-between py-2 p-5" style="background-color:tomato;">
+        <h5 style="color:black;font-weight:bold;">PHP Assignment</h5>
+        
+        <h4 style="color:white;font-family:perpetua;">
+            <i class="fa fa-user-circle text-info" aria-hidden="true" style="font-size:30px;"></i>
+            <?php print ucfirst($fname); ?>
+          </h4>
+        <a href="logout.php" style="color:white;">
+        <i class="fa fa-sign-out" aria-hidden="true">
+            <h6>Logout</h6>
+        </i>
     </a>
-    </form>
+        
     </div>
 <!-- form container -->
-<div class="py-2" style="height:80vh; background-color:grey;">
+<div class="py-2" style="height:80vh; background-color:white;">
     <!-- <h1>Test</h1> -->
-    <div class="row">
+    <div class="row py-2">
         <div class="col-md-7 col-sm-12">
-                <div class="border px-4 pt-4 position-relative w-50 px-20 bg-white">
+                <div class="border px-4 pt-4 position-relative bg-white ">
+                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
+                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
+                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
+                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
+                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
                     background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
                 </div>
-                <div class="div">
+                <div class="border bg-white py-2 px-2 ">
                 <h5>Headlines <i class="fa fa-pencil" aria-hidden="true"></i> </h5> 
                 <hr>
                 <h6>Software development workers</h6>
-                <h2 class="bg-primary text-white" style="font-size:14px; height:30px;padding:7px;">
+                <h2 class="bg-primary text-white" style="font-size:14px; height:30px;padding:7px; padding:6px;">
                     <i class="fa fa-key " aria-hidden="true"></i>
                     Change Password
                 </h2>
@@ -55,7 +64,7 @@ if(!isset($_SESSION['user'])){
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <div class="position-relative">
                     <td>
-                        <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:158px;left:175px;"></i>
+                        <!-- <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:268px;left:150px;"></i> -->
                         <input type="password" name="current_password" id="" class="form-control">
                         </td>
                     </div>
@@ -65,10 +74,18 @@ if(!isset($_SESSION['user'])){
                         <td>New Password</td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>
-                            <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:195px;"></i>
+                            <!-- <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:300px;left:150px;"></i> -->
                             <input type="password" name="new_password" id="" class="form-control">
                         </td>
                         </div>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="" id="">
+                            Remind me to change password for each three months
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -78,17 +95,34 @@ if(!isset($_SESSION['user'])){
                    
                 </table>
         </div>
-        <div class="col-md-5 col-sm-12">
-           <h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur amet atque dolorem ea! Facere atque consequatur explicabo illo tempore quos animi assumenda doloremque quam veniam magnam, sit quasi repellendus, cumque, aliquam consectetur praesentium illum velit minima! Reprehenderit obcaecati dicta in laborum iste earum quos animi fugiat consectetur quod facilis officia libero reiciendis alias, saepe sed adipisci asperiores molestias vero odit aut iure distinctio, necessitatibus facere. Nihil repudiandae iure, voluptatum soluta ut aut reprehenderit error, architecto natus maiores enim pariatur aliquid odio cum esse voluptatibus et asperiores voluptatem iusto quod at, odit unde? Praesentium tempore dicta at nulla soluta unde sapiente.
-           </h1>
+        <div class="col-md-5 col-sm-12 px-3 h-25">
+         <p>
+             <h6>
+                <center> ACCOUNT SETINGS </center> <br><hr>
+                 <!-- <hr style="color:blue; border:large;padding:2px;">
+                 Edit profile <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                 Change password<br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                  Sign in activities <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                 Session timeout <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                 Memorialisation  <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                  Email & sms notification  <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                  Push notification <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+                  Delete my account  <br>
+                 <hr style="color:blue; border:large;padding:2px;">
+             </h6> -->
+         </p>
         </div>
     </div>
-
-
-
     </div>
 </div>
-<div class="d-flex justify-content-between bg-primary py-3 text-white">
+<div class="d-flex justify-content-between bg-primary py-3 text-white p-5">
 <h6>Developed by Musocial</h6>
 <h6>Kigali Rwanda</h6>
 <h6>

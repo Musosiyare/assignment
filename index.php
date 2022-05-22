@@ -28,12 +28,12 @@
         <div class="my-2 position-relative m-1">
            <div class="row">
                <div class="col  position-relative">
-               <input type="text" name="fname" id="" placeholder="Firstname" required class="form-control">
+               <input type="text" name="fname" id="" placeholder="Firstname" required minlength="3" class="form-control">
                 <i class="fa fa-user text-info " aria-hidden="true"  style="position:absolute; top:10px;left:13px;"></i>
            
                </div>
                <div class="col  position-relative">
-               <input type="text" name="lname" id="" placeholder="Lastname" required class="form-control">  
+               <input type="text" name="lname" id="" placeholder="Lastname" required minlength="3" class="form-control">  
                 <i class="fa fa-user text-info" aria-hidden="true" style="position:absolute; top:10px;left:13px;"></i>
                </div>
            </div>
@@ -44,7 +44,7 @@
                     <i class="fa fa-envelope text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
                 </div>
                 <div class="position-relative">
-                <input type="password" name="password" id="" placeholder="Password" required class="px-4 form-control my-2">
+                <input type="password" name="password" id="" placeholder="Password" required minlength="3" class="px-4 form-control my-2">
                 <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
             </div>
                 
@@ -59,7 +59,7 @@
             </div>
     </div>
 </div>
-        <div class="d-flex justify-content-between bg-primary py-3 text-white">
+        <div class="d-flex justify-content-between bg-primary py-3 text-white p-5">
             <h6>Developed by Musocial</h6>
             <h6>Kigali Rwanda</h6>
             <h6>

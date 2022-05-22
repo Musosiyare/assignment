@@ -12,11 +12,11 @@ if (mysqli_num_rows($result) > 0) {
     } 
 }
 else {
-    $_SESSION['error'] = "Plz type your password correctly";
+    $_SESSION['error'] = "Plz type your Email correctly";
     header("location:username.php");
 }
     if (empty($email)) {
         $_SESSION['error'] = "Empty field";
-        header("location:password.php");
+        header("location:username.php");
     }
 ?>

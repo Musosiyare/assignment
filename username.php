@@ -52,7 +52,7 @@ session_start();
             </div>
     </div>
 </div>
-<div class="d-flex justify-content-between bg-primary py-3 text-white">
+<div class="d-flex justify-content-between bg-primary py-3 text-white p-5">
 <h6>Developed by Musocial</h6>
 <h6>Kigali Rwanda</h6>
 <h6>
