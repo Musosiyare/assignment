@@ -15,4 +15,8 @@ else {
     $_SESSION['error'] = "Plz type your password correctly";
     header("location:username.php");
 }
+    if (empty($email)) {
+        $_SESSION['error'] = "Empty field";
+        header("location:password.php");
+    }
 ?>

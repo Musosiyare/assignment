@@ -14,5 +14,9 @@ if (mysqli_num_rows($result) > 0) {
 else {
     $_SESSION['error'] = "Plz type your password correctly";
     header("location:password.php");
+}  
+  if (empty($password)) {
+    $_SESSION['error'] = "Empty field";
+    header("location:password.php");
 }
 ?>

@@ -52,12 +52,15 @@ session_start();
             </div>
     </div>
 </div>
-<div class="footer">
-    <div class="f">
-        <header class="text-white p-1 text-center bg-primary">
-        <h5>Musocial@gmail.com</h5>
-        </header>
-    </div>
+<div class="d-flex justify-content-between bg-primary py-3 text-white">
+<h6>Developed by Musocial</h6>
+<h6>Kigali Rwanda</h6>
+<h6>
+<i class="fa fa-facebook" aria-hidden="true" style="font-size:20px;"></i>
+<i class="fa fa-twitter" aria-hidden="true" style="font-size:20px;"></i>
+<i class="fa fa-instagram" aria-hidden="true" style="font-size:20px;"></i>
+</h6>        
+</div>
 </div>
     </form>
 </body>

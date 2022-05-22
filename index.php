@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,7 +45,7 @@
                 </div>
                 <div class="position-relative">
                 <input type="password" name="password" id="" placeholder="Password" required class="px-4 form-control my-2">
-                <i class="fa fa-key text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
+                <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:12px;left:5px;"></i>
             </div>
                 
                 <button type="submit" class="btn btn-primary form-control my-2" style="border-radius:30px;">Next</button>
@@ -58,12 +59,16 @@
             </div>
     </div>
 </div>
-<div class="footer">
-    <div class="f">
-        <header class="text-white p-1 text-center bg-primary">
-        <h5>Musocial@gmail.com</h5>
-        </header>
-    </div>
+        <div class="d-flex justify-content-between bg-primary py-3 text-white">
+            <h6>Developed by Musocial</h6>
+            <h6>Kigali Rwanda</h6>
+            <h6>
+            <i class="fa fa-facebook" aria-hidden="true" style="font-size:20px;"></i>
+            <i class="fa fa-twitter" aria-hidden="true" style="font-size:20px;"></i>
+            <i class="fa fa-instagram" aria-hidden="true" style="font-size:20px;"></i>
+            </h6>        
+        </div>
+</div>
 </div>
     </form>
 </body>
