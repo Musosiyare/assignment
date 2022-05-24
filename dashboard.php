@@ -20,6 +20,14 @@ $fname = $_SESSION['user']['fname'];
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
+    <style>
+        li{
+            list-style-type:none;
+        }
+      li a{
+            text-decoration:none;
+        }
+    </style>
 </head>
 <body>
     <div class="d-flex justify-content-between py-2 p-5" style="background-color:tomato;">
@@ -41,18 +49,13 @@ $fname = $_SESSION['user']['fname'];
     <!-- <h1>Test</h1> -->
     <div class="row py-2">
         <div class="col-md-7 col-sm-12">
-                <div class="border px-4 pt-4 position-relative bg-white ">
-                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
-                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
-                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
-                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
-                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
-                    background image here sit amet consectetur adipisicing elit. Sunt, pariatur.
+                <div class="border  position-relative bg-white ">
+                 <img src="images/bg1.jpg" style="height:130px; width:785px;">
                 </div>
-                <div class="border bg-white py-2 px-2 ">
-                <h5>Headlines <i class="fa fa-pencil" aria-hidden="true"></i> </h5> 
+                <div class="border bg-white py-2 px-2  ">
+                <h5 style="padding:7px;">Headlines <i class="fa fa-pencil" aria-hidden="true"></i> </h5> 
                 <hr>
-                <h6>Software development workers</h6>
+                <h6 style="padding:7px;">Software development workers</h6>
                 <h2 class="bg-primary text-white" style="font-size:14px; height:30px;padding:7px; padding:6px;">
                     <i class="fa fa-key " aria-hidden="true"></i>
                     Change Password
@@ -60,7 +63,7 @@ $fname = $_SESSION['user']['fname'];
                 </div>
                 <table>
                     <tr>
-                        <td>Current Password</td>
+                        <td style="padding:20px;">Current Password</td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <div class="position-relative">
                     <td>
@@ -71,7 +74,7 @@ $fname = $_SESSION['user']['fname'];
                     </tr>
                     <tr>
                         <div class="position:relative;">
-                        <td>New Password</td>
+                        <td style="padding:20px;">New Password</td>
                         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>
                             <!-- <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:300px;left:150px;"></i> -->
@@ -98,26 +101,63 @@ $fname = $_SESSION['user']['fname'];
         <div class="col-md-5 col-sm-12 px-3 h-25">
          <p>
              <h6>
-                <center> ACCOUNT SETINGS </center> <br><hr>
-                 <!-- <hr style="color:blue; border:large;padding:2px;">
-                 Edit profile <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                 Change password<br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                  Sign in activities <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                 Session timeout <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                 Memorialisation  <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                  Email & sms notification  <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                  Push notification <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-                  Delete my account  <br>
-                 <hr style="color:blue; border:large;padding:2px;">
-             </h6> -->
-         </p>
+                <center> ACCOUNT SETINGS </center> <br><hr>   
+                <ul class="list-group">
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item " style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+                    <li class="list-group-item" style="border-top:2px;border-color:blue;border-left:none;border-right:none;">
+                        <a href="http://">
+                            <i class="fa fa-edit" aria-hidden="true" style="font-size:20px;"></i>
+                             Change profile
+                        </a>
+                    </li>
+</ul>          
         </div>
     </div>
     </div>
