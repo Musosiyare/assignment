@@ -51,7 +51,7 @@
                 <button type="submit" class="btn btn-primary form-control my-2" style="border-radius:30px;">Next</button>
                 <hr>
                 <button type="submit" class="btn btn-danger form-control my-2">
-                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                <i class="fa fa-google-plus text-info" aria-hidden="true" style="font-size:23px;"></i>
                 Continue with Google</button>
                 <h6 class="" style="color:red;">Already have an Account, 
                 <a href="username.php">Sign In</a> 

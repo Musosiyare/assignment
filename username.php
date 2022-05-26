@@ -45,7 +45,10 @@ session_start();
                 </div>
                 <button type="submit" name="login" class="btn btn-primary form-control my-2" style="border-radius:30px;">Next</button>
                 <hr>
-                <button type="submit" name="" class="btn btn-danger form-control my-2">Continue with Google</button>
+                <button type="submit" name="" class="btn btn-danger form-control my-2">
+                <i class="fa fa-google-plus text-info" aria-hidden="true" style="font-size:23px;"></i>
+                Continue with Google
+                </button>
                 <h6 class="" style="color:red;"> 
                 <a href="index.php">Create an Account</a> 
                 </h6>      
