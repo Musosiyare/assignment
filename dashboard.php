@@ -38,12 +38,18 @@ $fname = $_SESSION['user']['fname'];
             <?php print ucfirst($fname); ?>
           </h4>
         </div>
-        <a href="logout.php" style="color:white;">
-        <i class="fa fa-sign-out" aria-hidden="true">
-            <h6>Logout</h6>
-        </i>
-    </a>
-        
+        <div class="dropdown open">
+            <a class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                   <i class="fa fa-navicon text-info" aria-hidden="true" style="font-size:30px;"></i>
+                    </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+                <a class="dropdown-item" href="logout.php" style="">
+                <i class="fa fa-sign-out text-info" aria-hidden="true" style="font-size:20px;"></i>
+                Logout
+                </a>
+            </div>
+        </div>
     </div>
 <!-- form container -->
 <div class="py-2" style="height:80vh; background-color:white;">
