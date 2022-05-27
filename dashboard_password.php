@@ -57,7 +57,7 @@ $fname = $_SESSION['user']['fname'];
     <div class="row py-2">
         <div class="col-md-7 col-sm-12">
                 <div class="border  position-relative"style="background-image:url(images/bg3.webp);height:140px;">
-                 <img class="rounded-circle position-absolute" src="images/bg5.png" data-bs-toggle="modal" data-bs-target="#changepro" style="height:100px; width:100px; bottom:-1rem; left:1rem;">
+                 <img class="rounded-circle position-absolute" src="images/bg1.jpg" data-bs-toggle="modal" data-bs-target="#changepro" style="height:100px; width:100px; bottom:-1rem; left:1rem;">
                 </div>
                 <div class="border bg-white py-2 px-2  ">
                 <h5 style="padding:7px;">Headlines
@@ -66,7 +66,51 @@ $fname = $_SESSION['user']['fname'];
                 </a>
                 <hr>
                 <h6 style="padding:7px;">Software development workers</h6>
+                <h2 class="bg-primary text-white" style="font-size:14px; height:40px; padding:3px;">
+                <i class="fas fa-key text-info pe-2 px-2" aria-hidden="true" style="font-size:23px;"></i>
+                    Change Password
+                </h2>
                 </div>
+                <form action="change_password.php" method="post">
+
+                
+                <table>
+                    <tr>
+                        <td style="padding:20px;">Current Password</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <div class="position-relative">
+                    <td>
+                        <input type="password" name="current_password" id="" class="form-control">
+                        <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:410px;left:190px;"></i>
+                        </td>
+                    </div>
+                    </tr>
+                    <tr>
+                        <div class="position:relative;">
+                        <td style="padding:20px;">New Password</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="password" name="new_password" id="" class="form-control">
+                            <i class="fas fa-key text-info" aria-hidden="true" style="position:absolute; top:480px;left:190px; margin-end:10px;"></i>
+                        </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="" id="">
+                            Remind me to change password for each three months
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <button type="submit" class="btn btn-primary my-3 mx-5">Set New Password</button></td>
+                    </tr>
+                   
+                </table>
+                </form>
         </div>
         <div class="col-md-5 col-sm-12 px-3 h-25 my-5">
                 <ul class="list-group">
@@ -80,7 +124,7 @@ $fname = $_SESSION['user']['fname'];
                         </a>
                     </li>
                     <li class="list-group-item" style="border-top:2px;border-color:cyan;border-left:none;border-right:none; font-weight:bold;">
-                        <a href="dashboard_password.php">
+                        <a href="change_password.php">
                             <i class="fas fa-key text-info pe-1" aria-hidden="true" style="font-size:23px;"></i>
                              Change Password
                         </a>
@@ -134,7 +178,6 @@ $fname = $_SESSION['user']['fname'];
 </div>
 
 
-
 <!-- modal divisions -->
 
 <div class="modal fade" id="changepro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
@@ -147,7 +190,6 @@ $fname = $_SESSION['user']['fname'];
         </button>
       </div>
       <div class="modal-body">
-          <form action="uploadprofile.php" method="post" enctype="multipart/data">
         <p>
             <input type="file" name="profile" id="profile">
 
@@ -156,7 +198,6 @@ $fname = $_SESSION['user']['fname'];
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Upload profile</button>
         </div>
-        </form>
       </div>
        
     </div>

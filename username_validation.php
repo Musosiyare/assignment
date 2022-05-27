@@ -16,7 +16,7 @@ else {
     header("location:username.php");
 }
     if (empty($email)) {
-        $_SESSION['error'] = "Empty field";
+        $_SESSION['error'] = "Empty email";
         header("location:username.php");
     }
 ?>

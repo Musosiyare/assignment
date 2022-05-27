@@ -16,7 +16,7 @@ else {
     header("location:password.php");
 }  
   if (empty($password)) {
-    $_SESSION['error'] = "Empty field";
+    $_SESSION['error'] = "Empty password";
     header("location:password.php");
 }
 ?>
