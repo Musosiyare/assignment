@@ -23,12 +23,15 @@
 <div class="d-flex justify-content-center align-items-center" style="height:80vh;">
     <!-- <h1>Test</h1> -->
         <div class="border px-4 pt-4 position-relative text-center w-25 shadow" style="border-right:5px;">
-           <h6><b>Connect to IREMBO</b> </h6><br><br><br>
+           <h6><b>Connect to IREMBO</b> </h6>
+           <img src="images/bg2.jpg" class="rounded-circle" style="height:100px; width:100px;"><br>
+           <b>TUYISHIMIRE Peter</b> 
+           peterofficial@gmail.com
            <div class="my-5">
-                <button type="submit" name="facebook" class="form-control btn btn-blue" style="background-color:blue;color:white;font-size:18px; font-weight:bold;">
-                    <i class="fa fa-facebook-official text-white" aria-hidden="true" style="font-size:25px;"></i>
-                    Continue with Facebook
-                </button><br><br><br><br><br>
+                <button type="submit" name="logout" class="form-control btn btn-blue"
+                 style="width:40%;background-color:blue;color:white;font-size:15px;">
+                Log out
+                </button><br><br>
            </div>
         </div>
 </div>
